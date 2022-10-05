@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1f6a9c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".SocialHandle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="166dp"
+                    android:background="#fcd303"
+                    android:gravity="center"
+                    android:text="CONNECT WITH US!"
+                    android:textColor="#000"
+                    android:textSize="30sp"
+                    android:typeface="serif" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="30dp"
+                    android:background="#1f6a9c"
+                    android:gravity="center"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+            <!--first row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/instagram"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight=".50"
+                    android:height="126dp"
+                    android:background="@drawable/buttonshape"
+                    android:drawableTop="@drawable/ic_insta"
+                    android:elevation="1dp"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="INSTAGRAM" />
+
+                <Button
+                    android:id="@+id/facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight=".50"
+                    android:height="126dp"
+                    android:background="@drawable/buttonshape"
+                    android:drawableTop="@drawable/ic_fb"
+                    android:elevation="1dp"
+                    android:padding="15dp"
+                    android:text="FACEBOOK" />
+            </LinearLayout>
+            <!--2nd row -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/web"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight=".50"
+                    android:height="126dp"
+                    android:background="@drawable/buttonshape"
+                    android:drawableTop="@drawable/ic_web"
+                    android:elevation="1dp"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="WEBSITE" />
+
+                <Button
+                    android:id="@+id/twitter"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight=".50"
+                    android:height="126dp"
+                    android:background="@drawable/buttonshape"
+                    android:drawableTop="@drawable/ic_twitter"
+                    android:elevation="1dp"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="TWITTER" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="176dp"
+                    android:gravity="center"
+                    android:text="Please like , share and follow our page!!"
+                    android:textColor="#fff"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

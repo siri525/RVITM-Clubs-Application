@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fbeec1"
+        tools:context=".Aboutamtc">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Infotitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2c82e"
+                android:gravity="center"
+                android:text="ABOUT PHOENIX"
+                android:textColor="#000"
+                android:textSize="40sp" />
+            <TextView
+                android:id="@+id/txtpara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:layout_marginHorizontal="20dp"
+                android:text="phoenix_about"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

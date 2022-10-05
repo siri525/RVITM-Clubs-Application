@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fbeec1"
+        android:foregroundGravity="clip_horizontal"
+        tools:context=".MainActivity"
+        tools:ignore="SpeakableTextPresentCheck"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_header"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:foregroundGravity="center|center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/phoenix_logo" />
+
+
+        <RelativeLayout
+            android:id="@+id/secondbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_header"
+            android:background="#bc986a"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+            <TextView
+                android:id="@+id/title_amtc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:text="RVITM"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtitle_amtc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_amtc"
+                android:layout_centerHorizontal="true"
+                android:text="PHOENIX ROBOTICS CLUB"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/noofmember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtitle_amtc"
+                android:layout_centerHorizontal="true"
+                android:text="(97 members)" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noofmember"
+                android:layout_marginTop="13dp"
+                android:weightSum="2">
+
+
+                <Button
+                    android:id="@+id/details_bttn"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonshape"
+                    android:text="DETAILS" />
+
+                <Button
+                    android:id="@+id/join_bttn"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonshape"
+                    android:text="JOIN" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondbox"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="2dp"
+            android:text="ABOUT"
+            android:textColor="#82878c"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/para"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about"
+            android:layout_marginHorizontal="13dp"
+            android:text="phoenix_about"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
